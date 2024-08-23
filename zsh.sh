@@ -26,7 +26,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Edit zshrc and add powerlevel
 sed  -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 sudo rm ~/.p10k.zsh
-curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/.p10k.zh > ~/.p10k.zsh
+curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/.p10k.zsh > ~/.p10k.zsh
 
 # Install plugins (zsh-autosuggestions and zsh-syntax-highlighting)
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
