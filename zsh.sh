@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# to install: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# to install: sh -c "$(curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/zsh.sh)"
 
 # Устанавливаем Zsh  
 sudo apt update  
