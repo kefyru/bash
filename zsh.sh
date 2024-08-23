@@ -1,6 +1,7 @@
 
 #!/bin/bash
 # Install zsh
+sudo apt update
 sudo apt install git zsh fonts-powerline mc vim nano ranger -y
 # Show version
 zsh --version
@@ -12,6 +13,7 @@ echo $SHELL
 echo "Logout & Login if don't see zsh as default shell."
 # Install oh-my-zsh. https://github.com/ohmyzsh/ohmyzsh
 # Assuming you have curl installed.
+RUNZSH=no
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # Use agnoster theme
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
