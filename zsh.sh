@@ -28,7 +28,7 @@ sed  -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.z
 sudo rm ~/.p10k.zsh
 curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/.p10k.zsh > ~/.p10k.zsh
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-grep -q -F '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' foo.bar || echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> foo.bar
+grep -q -F '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' ~/.zhrc || echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> ~./zhrc
 
 # Install plugins (zsh-autosuggestions and zsh-syntax-highlighting)
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
