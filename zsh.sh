@@ -1,9 +1,10 @@
 #!/bin/bash
 
+# to install: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Устанавливаем Zsh  
 sudo apt update  
-sudo apt install git -y
-sudo apt install zsh -y
+sudo apt install git zsh -y
 
 # Устанавливаем oh-my-zsh  
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -23,6 +24,11 @@ echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting)" >> ~/.zshrc
 
 # Устанавливаем шрифт для отображения иконок Powerline  
 sudo apt install fonts-powerline -y
+
+# Утилиты
+# file managers: mc, ranger
+# text editors: vim vi nano
+sudo apt install mc ranger vim nano -y 
 
 # Смена оболочки по умолчанию  
 chsh -s $(which zsh)
