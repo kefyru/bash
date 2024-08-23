@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install zsh
-sudo apt install zsh -y
+sudo apt install git zsh fonts-powerline mc vim nano ranger -y
 # Show version
 zsh --version
 # Set zsh as default shell
@@ -16,8 +16,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#agnoster
 # Edit ZSH_THEME
 sed  -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
-# Install powerline font
-sudo apt-get install fonts-powerline -y
+
 # Install powerlevel10k
 sudo rm -R ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
