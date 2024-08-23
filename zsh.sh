@@ -1,3 +1,4 @@
+
 #!/bin/bash
 # Install zsh
 sudo apt install git zsh fonts-powerline mc vim nano ranger -y
@@ -22,6 +23,9 @@ sudo rm -R ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 # Edit zshrc and add powerlevel
 sed  -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
+sudo rm ~/.p10k.zh
+curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/.p10k.zh > ~/.p10k.zh
+
 # Install plugins (zsh-autosuggestions and zsh-syntax-highlighting)
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
