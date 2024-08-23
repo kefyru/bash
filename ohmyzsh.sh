@@ -1,3 +1,9 @@
+#!/bin/bash
+sudo apt update
+if [ $ZSH_CUSTOM = '' ]
+then
+  echo "zh not installed"
+fi
 # Устанавливаем oh-my-zsh  
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
