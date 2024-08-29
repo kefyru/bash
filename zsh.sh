@@ -2,7 +2,7 @@
 # to install: sh -c "$(curl -fsSL https://raw.githubusercontent.com/kefyru/bash/main/zsh.sh)"
 # Install zsh
 sudo apt update
-sudo apt install git zsh fonts-powerline mc vim nano ranger -y
+sudo apt install git zsh fonts-powerline -y
 # Show version
 zsh --version
 # Set zsh as default shell
